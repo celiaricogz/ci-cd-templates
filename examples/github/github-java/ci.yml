@@ -1,0 +1,14 @@
+# Example workflow to use java.yml as a standalone CI
+
+name: Example Java CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  include-java-ci:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/java.yml@main
+
+  include-common:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/common.yml@main

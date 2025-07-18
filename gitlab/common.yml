@@ -1,0 +1,32 @@
+# gitlab/common.yml
+stages:
+  - lint
+  - test
+  - notify
+
+# Dummy lint (can be replaced or extended)
+lint_job:
+  stage: lint
+  image: alpine:latest
+  script:
+    - echo "Running default lint check..."
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+# Dummy test (for projects that don’t define tests)
+dummy_test:
+  stage: test
+  image: alpine:latest
+  script:
+    - echo "Running placeholder test (no real tests defined)"
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+# Example notification job (extendable)
+notify_success:
+  stage: notify
+  image: alpine:latest
+  script:
+    - echo "Pipeline for $CI_PROJECT_NAME completed successfully on branch $CI_COMMIT_BRANCH"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'

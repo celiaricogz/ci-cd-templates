@@ -1,0 +1,49 @@
+# gitlab/python.yml
+stages:
+  - install
+  - lint
+  - test
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cache/pip
+
+install_dependencies:
+  stage: install
+  image: python:3.11
+  script:
+    - echo "Installing dependencies..."
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+  artifacts:
+    paths:
+      - .cache/pip
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+lint:
+  stage: lint
+  image: python:3.11
+  script:
+    - echo "Running flake8..."
+    - pip install flake8
+    - flake8 .
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+test:
+  stage: test
+  image: python:3.11
+  script:
+    - echo "Running pytest..."
+    - pip install pytest
+    - pytest --junitxml=report.xml
+  artifacts:
+    reports:
+      junit: report.xml
+  rules:
+    - if: '$CI_COMMIT_BRANCH'

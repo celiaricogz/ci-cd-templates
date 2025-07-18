@@ -1,0 +1,14 @@
+# Example GitHub Actions workflow using the Node template
+
+name: Example Node CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  include-node-ci:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/node.yml@main
+
+  include-common:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/common.yml@main

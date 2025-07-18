@@ -1,0 +1,36 @@
+# gitlab/java.yml
+stages:
+  - build
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .m2/repository
+
+build:
+  stage: build
+  image: maven:3.9.6-eclipse-temurin-17
+  script:
+    - echo "Building Java project..."
+    - mvn -B clean compile
+  artifacts:
+    paths:
+      - target/
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+test:
+  stage: test
+  image: maven:3.9.6-eclipse-temurin-17
+  script:
+    - echo "Running tests..."
+    - mvn -B test
+  artifacts:
+    reports:
+      junit: target/surefire-reports/TEST-*.xml
+  rules:
+    - if: '$CI_COMMIT_BRANCH'

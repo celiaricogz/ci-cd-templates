@@ -1,0 +1,60 @@
+# gitlab/node.yml
+stages:
+  - install
+  - lint
+  - test
+  - build
+
+variables:
+  NODE_ENV: "development"
+  CACHE_PATH: ".npm"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - ${CACHE_PATH}/
+
+install_dependencies:
+  stage: install
+  image: node:18
+  script:
+    - echo "Installing dependencies..."
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+lint:
+  stage: lint
+  image: node:18
+  script:
+    - echo "Running linter..."
+    - npm run lint
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+test:
+  stage: test
+  image: node:18
+  script:
+    - echo "Running tests..."
+    - npm test
+  artifacts:
+    reports:
+      junit: report.xml
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+build:
+  stage: build
+  image: node:18
+  script:
+    - echo "Building project..."
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'

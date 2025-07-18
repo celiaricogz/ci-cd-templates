@@ -1,0 +1,14 @@
+# Example GitHub Actions workflow using the Python template
+
+name: Example Python CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  include-python-ci:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/python.yml@main
+
+  include-common:
+    uses: celiaricogz/ci-cd-templates/.github/workflows/common.yml@main

@@ -1,0 +1,26 @@
+# github/common.yml
+name: Common Jobs
+
+on:
+  workflow_call:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run default lint check
+        run: echo "Running default lint (no specific linter configured)"
+
+  dummy-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run dummy test
+        run: echo "Running placeholder test (no real tests defined)"
+
+  notify-success:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Success
+        run: echo "Pipeline completed successfully on ${{ github.ref_name }}"

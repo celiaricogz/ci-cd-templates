@@ -1,0 +1,14 @@
+include:
+  - project: 'celiaricogz/ci-cd-templates'
+    ref: main
+    file: '/gitlab/java.yml'
+  - project: 'celiaricogz/ci-cd-templates'
+    ref: main
+    file: '/gitlab/common.yml'
+
+# Optional dummy job to make it run standalone
+dummy_build:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "Dummy Java build job (replace with real project)"
