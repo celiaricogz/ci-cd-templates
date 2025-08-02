@@ -1,4 +1,4 @@
-# 🚀 Plantillas CI/CD – Pipelines Listos para Usar en GitLab & GitHub
+# Plantillas CI/CD – Pipelines Listos para Usar en GitLab & GitHub
 
 **Plantillas CI/CD** es una colección de **pipelines listos para producción** para los stacks más comunes (Node.js, Python, Java), compatibles tanto con **GitLab CI** como con **GitHub Actions**.
 
@@ -6,7 +6,7 @@ Deja de perder tiempo escribiendo archivos `.yml` de boilerplate. Estas plantill
 
 ---
 
-## ✨ Características
+## Características
 
 - **Multiplataforma**: Funciona con **GitLab CI** (`include:`) y **GitHub Actions** (`uses:`).
 - **Tres lenguajes soportados** (y creciendo):  
@@ -20,7 +20,7 @@ Deja de perder tiempo escribiendo archivos `.yml` de boilerplate. Estas plantill
 
 ---
 
-## 📂 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 .
@@ -52,7 +52,7 @@ Deja de perder tiempo escribiendo archivos `.yml` de boilerplate. Estas plantill
 
 ---
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### **Para GitLab CI**
 
@@ -94,7 +94,7 @@ jobs:
 
 ---
 
-## 🛠 Stacks Soportados
+## Stacks Soportados
 
 - **Node.js**: `npm ci`, linting, testing, build y subida de artefactos.
 - **Python**: `pip` con caché, linting con flake8, pytest con reportes de tests.
@@ -102,7 +102,7 @@ jobs:
 
 ---
 
-## 🧩 ¿Por qué usar estas plantillas?
+## ¿Por qué usar estas plantillas?
 
 - **Ahorra tiempo** – no necesitas escribir pipelines desde cero.
 - **Builds más rápidos** – caché y trabajos optimizados.
@@ -113,27 +113,27 @@ Tanto si eres una **startup** que necesita CI/CD rápido como un **equipo sin De
 
 ---
 
-## 📸 Capturas & Demos
+## Capturas & Demos
 
 Próximamente: capturas de pipelines en acción y enlaces a repos de demo.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Licenciado bajo la **Licencia MIT**.  
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## 👩‍💻 Autora
+## Autora
 
 **Celia Rico Gutiérrez**  
 Ingeniera DevOps — Automatización CI/CD, modularización, empaquetado reproducible  
-🔗 [LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
-🔗 [Malt](https://www.malt.es/profile/celiaricogutierrez)
-🔗 [UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
+[LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
+[Malt](https://www.malt.es/profile/celiaricogutierrez)
+[UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
 
 ---
 
-📅 _Última actualización: julio 2025_
+_Última actualización: julio 2025_
