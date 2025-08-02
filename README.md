@@ -1,4 +1,4 @@
-# 🚀 CI/CD Templates – Ready-to-Use Pipelines for GitLab & GitHub
+# CI/CD Templates – Ready-to-Use Pipelines for GitLab & GitHub
 
 **CI/CD Templates** is a collection of **production-ready pipelines** for the most common stacks (Node.js, Python, Java), compatible with both **GitLab CI** and **GitHub Actions**.  
 
@@ -6,7 +6,7 @@ Stop wasting time writing boilerplate `.yml` files. These templates are **optimi
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi-platform**: Works with both **GitLab CI** (`include:`) and **GitHub Actions** (`uses:`).
 - **Three languages supported** (and growing):  
@@ -20,7 +20,7 @@ Stop wasting time writing boilerplate `.yml` files. These templates are **optimi
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -52,7 +52,7 @@ Stop wasting time writing boilerplate `.yml` files. These templates are **optimi
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### **For GitLab CI**
 
@@ -94,7 +94,7 @@ jobs:
 
 ---
 
-## 🛠 Supported Stacks
+## Supported Stacks
 
 - **Node.js**: `npm ci`, linting, testing, build, and artifact upload.
 - **Python**: `pip` with cache, flake8 linting, pytest with test reports.
@@ -102,7 +102,7 @@ jobs:
 
 ---
 
-## 🧩 Why Use These Templates?
+## Why Use These Templates?
 
 - **Save time** – no need to write pipelines from scratch.
 - **Faster builds** – caching and optimized job definitions.
@@ -113,27 +113,27 @@ Whether you're a **startup** needing fast CI/CD setup or a **team without dedica
 
 ---
 
-## 📸 Screenshots & Demos
+## Screenshots & Demos
 
 Coming soon: screenshots of pipelines in action and links to demo repos.
 
 ---
 
-## 📄 License
+## License
 
 Licensed under the **MIT License**.  
 See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Celia Rico Gutiérrez**  
 DevOps Engineer — CI/CD automation, modularization, reproducible packaging  
-🔗 [LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
-🔗 [Malt](https://www.malt.es/profile/celiaricogutierrez)
-🔗 [UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
+[LinkedIn](https://www.linkedin.com/in/celiaricogutierrez)  
+[Malt](https://www.malt.es/profile/celiaricogutierrez)
+[UpWork](https://www.upwork.com/freelancers/~01898dfb872ff48b7a?mp_source=share)
 
 ---
 
-📅 _Last updated: July 2025_
+_Last updated: July 2025_
