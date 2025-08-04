@@ -129,7 +129,7 @@ See the [LICENSE](LICENSE) file for details.
 ## Author
 
 **Celia Rico Gutiérrez**  
-DevOps Engineer — CI/CD automation, modularization, reproducible packaging  
+DevOps Engineer — Dockerized delivery, modular architecture, CI/CD pipelines  
 
 [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Logo" width="35" style="vertical-align:middle; margin-right:8px;"/>](https://www.linkedin.com/in/celiaricogutierrez)
 [<img src="https://play-lh.googleusercontent.com/1r1DdWXDT9K7D2yBwPkVyXQFEjLL0cMrR6SxBvcNXXwpi8aZN0ZKS61CVdtvK6pmpg" alt="Malt Logo" width="35" style="vertical-align:middle; margin-right:8px;"/>](https://www.malt.es/profile/celiaricogutierrez)
